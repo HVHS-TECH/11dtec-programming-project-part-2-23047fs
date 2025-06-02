@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Bob's Rentals</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- stylesheets *******************************************-->
-  <link rel="stylesheet" href="style.css">
-<!-- Script *******************************************-->
-  <script src="car_rentals.js"></script>
+    <title>Bob's Rentals - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheets *******************************************-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script *******************************************-->
+    <script src="car_rentals.js"></script>
 
 </head>
-
 <!--*************************************************************
   BODY
 **************************************************************-->
 <body onload="autoSTART();">
-<!--Connects javascript to html-->
+    <!--Connects javascript to html-->
 
-  <header>
-    <h1 id="mainHEADER">Bob's Rentals</h1>
-  </header>
+    <header>
+        <h1 id="mainHEADER">Bob's Rentals</h1>
+    </header>
 
+    <nav>
+        <div class="link-flex-container">
+            <div>
+                <h2><a class="mainLINK" href="index.html">Home</a></h2>
+            </div>
 
-    <nav class="link-flex-container">
-        <div>
-            <h2><a class="mainLINK" href="index.html">Home</a></h2>
-        </div>
+            <div>
+                <h2><a class="mainLINK" href="About_us.html">About Us</a></h2>
+            </div>
 
-        <div>
-            <h2><a class="mainLINK" href="About_us.html">About Us</a></h2>
-        </div>
-
-        <div>
-            <h2><a class="mainLINK" href="Credits.html">Credits</a></h2>
+            <div>
+                <h2><a class="mainLINK" href="Credits.html">Credits</a></h2>
+            </div>
         </div>
     </nav>
 
-  <p class="mainBODY">At Bob's rentals we have many different sized cars, ranging from 1 seat to 8 seats.</p>
-  <p class="mainBODY">To rent a car press the rent button.</p>
-  <div id="mainBUTTONdiv">
-    <button id="mainBUTTON" onclick="start()">Rent a Car</button>
-  </div>
-<!--Button that plays start func on click-->
-  <h1 id="avalableCARS">Wait</h1>
-<!--Id is used to connect with javascript-->
+    <main>
+        <p class="mainBODY">At Bob's rentals we have many different sized cars, ranging from 1 seat to 8 seats.</p>
+        <p class="mainBODY">To rent a car press the rent button.</p>
+        <div id="mainBUTTONdiv">
+            <button id="mainBUTTON" onclick="start()">Rent a Car</button>
+        </div>
+        <!--Button that plays start func on click-->
+        <h1 id="avalableCARS">Wait</h1>
+        <!--Id is used to connect with javascript-->
+    </main>
 
+    <footer>
+
+    </footer>
 </body>
+
 </html>
 <!--*************************************************************
   END OF HTML
 **************************************************************-->
-

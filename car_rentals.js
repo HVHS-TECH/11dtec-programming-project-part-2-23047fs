@@ -30,17 +30,17 @@ let carSEATS = [1, 2, 4, 5, 7, 8];
 Main code
 ********************************/
 function autoSTART() {
-displayAVALABLEcars();
-console.log("running auto start");
+    displayAVALABLEcars();
+    console.log("running auto start");
 }
 
 function start() {
-userWELCOME();
-//userLICENCEcheck();
-findUSERcar();
-userCARdaysANDprice();
-userFINALcheck();
-checkVARIABLES();
+    userWELCOME();
+    //userLICENCEcheck();
+    findUSERcar();
+    userCARdaysANDprice();
+    userFINALcheck();
+    checkVARIABLES();
 }
 
 /********************************
@@ -48,38 +48,38 @@ Functions
 ********************************/
 //Welcomes user, user name, user age
 function displayAVALABLEcars() {
-for (i = 0; i < cars.length; i++){
-avalableCARS = `${avalableCARS} <br> \nCar ${(i + 1)} is ${cars[i]} it has ${carSEATS[i]} seats`;
-}
-//`` makes it html and ${} turns it back to javascript
-document.getElementById("avalableCARS").innerHTML = avalableCARS;
-console.log(avalableCARS);
+    for (i = 0; i < cars.length; i++) {
+        avalableCARS = `${avalableCARS} <br> \nCar ${(i + 1)} is ${cars[i]} it has ${carSEATS[i]} seats`;
+    }
+    //`` makes it html and ${} turns it back to javascript
+    document.getElementById("avalableCARS").innerHTML = avalableCARS;
+    console.log(avalableCARS);
 }
 
 
 function userWELCOME() {
-userNAME = prompt("Hello, what is your name");
-while (userNAMEinvalid == true) {
-if (userNAME == null || userNAME == "" || userNAME == " " || !isNaN(userNAME)) {
-userNAME = prompt("Invalid, what is your name");
-} 
-else {
-userNAMEinvalid = false;
-}
-}
-//Validates user name and traps user until a valid name
-userAGE = prompt("Hello " + userNAME + ", what is your age");
-//Asks user name and age
-while (userAGEinvalid == true) {
-if (userAGE == null || userAGE == "" || userAGE == " " || userAGE < 16 || isNaN(userAGE)) {
-userAGE = prompt("Invalid, what is your age");
-}
-else {
-userAGEinvalid = false;
-}
-}
-userAGE = Number(userAGE);
-//Converts string to number
+    userNAME = prompt("Hello, what is your name");
+    while (userNAMEinvalid == true) {
+        if (userNAME == null || userNAME == "" || userNAME == " " || !isNaN(userNAME)) {
+            userNAME = prompt("Invalid, what is your name");
+        }
+        else {
+            userNAMEinvalid = false;
+        }
+    }
+    //Validates user name and traps user until a valid name
+    userAGE = prompt("Hello " + userNAME + ", what is your age");
+    //Asks user name and age
+    while (userAGEinvalid == true) {
+        if (userAGE == null || userAGE == "" || userAGE == " " || userAGE < 16 || isNaN(userAGE)) {
+            userAGE = prompt("Invalid, what is your age");
+        }
+        else {
+            userAGEinvalid = false;
+        }
+    }
+    userAGE = Number(userAGE);
+    //Converts string to number
 }
 
 /*
@@ -99,71 +99,71 @@ function userLICENCEcheck() {
 
 //What car, seats
 function findUSERcar() {
-userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle (1-8)");
-while (userCARvariablesINVALID == true) {
-if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables >= 9 || isNaN(userCARvariables)) {
-userCARvariables = prompt("Invalid, what would be the ideal number of seats in your vehicle (1-8)");
-}
-else {
-userCARvariablesINVALID = false;
-}
-}
-userCARvariables = userCARvariables - 1;
-if (userCARvariables >= 3 && userCARvariables < 6) {
-userCARvariables = userCARvariables - 1;
-} else if (userCARvariables >= 5) {
-userCARvariables = userCARvariables - 2;
-}
-//Calculates what seat and it is (prob complicated because of me and it goes 1,2,4,5,7,8 and it starts at 0)
-//If req seats are 3 or 6 they round up one
-userRECOMMENDEDcar = cars[userCARvariables];
-//Finds recommended car
-alert("The recommended car that meets your requirements is " + cars[userCARvariables] + ", it has " + carSEATS[userCARvariables] + " seats");
-//Tells user recommended car and its number of seats
+    userCARvariables = prompt(userNAME + " what would be the ideal number of seats in your vehicle (1-8)");
+    while (userCARvariablesINVALID == true) {
+        if (userCARvariables == null || userCARvariables == "" || userCARvariables == " " || userCARvariables < 1 || userCARvariables >= 9 || isNaN(userCARvariables)) {
+            userCARvariables = prompt("Invalid, what would be the ideal number of seats in your vehicle (1-8)");
+        }
+        else {
+            userCARvariablesINVALID = false;
+        }
+    }
+    userCARvariables = userCARvariables - 1;
+    if (userCARvariables >= 3 && userCARvariables < 6) {
+        userCARvariables = userCARvariables - 1;
+    } else if (userCARvariables >= 5) {
+        userCARvariables = userCARvariables - 2;
+    }
+    //Calculates what seat and it is (prob complicated because of me and it goes 1,2,4,5,7,8 and it starts at 0)
+    //If req seats are 3 or 6 they round up one
+    userRECOMMENDEDcar = cars[userCARvariables];
+    //Finds recommended car
+    alert("The recommended car that meets your requirements is " + cars[userCARvariables] + ", it has " + carSEATS[userCARvariables] + " seats");
+    //Tells user recommended car and its number of seats
 }
 
 //Number of days, price, card
 function userCARdaysANDprice() {
-alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
-userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
-while (userCARdaysINVALID == true) {
-if (userCARdays == null || userCARdays == "" || userCARdays == " " || userCARdays < 1 || isNaN(userCARdays)) {
-userCARdays = prompt("Invalid, How many days would you like to use a " + cars[userCARvariables]);
-}
-else {
-userCARdaysINVALID = false;
-}
-}
-userCARdays = Number(userCARdays);
-//Converts string to number
-userCARvariables = userCARvariables + 1;
-if (userCARvariables >= 3 && userCARvariables < 5) {
-userCARvariables = userCARvariables + 1;
-} else if (userCARvariables >= 5) {
-userCARvariables = userCARvariables + 2;
-}
-//Fixes the money calculation promblem
-userTOTALprice = userCARdays * userCARvariables * rentalPRICE;
-console.log("check " + userCARvariables);
-//Calculates price day * car seats + 1 (cause - 1 for arrays) * rental price
-userCARDnumber = prompt("The total cost for " + userCARdays + " days is $" + userTOTALprice + ". Please input your card number");
+    alert("Hello " + userNAME + " at Rob's Rentals the price is $50 per number of seats per day");
+    userCARdays = prompt("How many days would you like to use a " + cars[userCARvariables]);
+    while (userCARdaysINVALID == true) {
+        if (userCARdays == null || userCARdays == "" || userCARdays == " " || userCARdays < 1 || isNaN(userCARdays)) {
+            userCARdays = prompt("Invalid, How many days would you like to use a " + cars[userCARvariables]);
+        }
+        else {
+            userCARdaysINVALID = false;
+        }
+    }
+    userCARdays = Number(userCARdays);
+    //Converts string to number
+    userCARvariables = userCARvariables + 1;
+    if (userCARvariables >= 3 && userCARvariables < 5) {
+        userCARvariables = userCARvariables + 1;
+    } else if (userCARvariables >= 5) {
+        userCARvariables = userCARvariables + 2;
+    }
+    //Fixes the money calculation promblem
+    userTOTALprice = userCARdays * userCARvariables * rentalPRICE;
+    console.log("check " + userCARvariables);
+    //Calculates price day * car seats + 1 (cause - 1 for arrays) * rental price
+    userCARDnumber = prompt("The total cost for " + userCARdays + " days is $" + userTOTALprice + ". Please input your card number");
 }
 
 //Final check
 function userFINALcheck() {
-alert("You have been assigned the " + cars[userCARvariables] + " for " + userCARdays + " days, the total cost is $" + userTOTALprice);
-//Final check with user
+    alert("You have been assigned the " + cars[userCARvariables] + " for " + userCARdays + " days, the total cost is $" + userTOTALprice);
+    //Final check with user
 }
 
 //Displays variables
 function checkVARIABLES() {
-console.log(userNAME);
-console.log(userAGE);
-//console.log(userLICENCE);
-console.log(userCARvariables);
-console.log(userRECOMMENDEDcar);
-console.log(userCARdays);
-console.log(rentalPRICE);
-console.log(userTOTALprice);
-console.log(userCARDnumber);
+    console.log(userNAME);
+    console.log(userAGE);
+    //console.log(userLICENCE);
+    console.log(userCARvariables);
+    console.log(userRECOMMENDEDcar);
+    console.log(userCARdays);
+    console.log(rentalPRICE);
+    console.log(userTOTALprice);
+    console.log(userCARDnumber);
 //Easy to check if info is right
