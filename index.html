@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
-</head>
-<body>
+  <title>Bob's Rentals</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- stylesheets *******************************************-->
+  <link rel="stylesheet" href="style.css">
+<!-- Script *******************************************-->
+  <script src="car_rentals.js"></script>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+</head>
+
+<!--*************************************************************
+  BODY
+**************************************************************-->
+<body onload="autoSTART();">
+<!--Connects javascript to html-->
+
+
+
+
+  <h1 id="header">Bob's Rentals</h1>
+  <p class="mainBODY">At Bob's rentals we have many different sized cars, ranging from 1 seat to 8 seats.</p>
+  <p class="mainBODY">To rent a car press the rent button.</p>
+  <div id="mainBUTTONdiv">
+    <button id="mainBUTTON" onclick="start()">Rent a Car</button>
+  </div>
+<!--Button that plays start func on click-->
+  <h1 id="avalableCARS">Wait</h1>
+<!--Id is used to connect with javascript-->
 
 </body>
 </html>
-
+<!--*************************************************************
+  END OF HTML
+**************************************************************-->
 
