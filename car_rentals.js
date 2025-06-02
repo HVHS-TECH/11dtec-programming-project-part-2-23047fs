@@ -167,3 +167,4 @@ function checkVARIABLES() {
     console.log(userTOTALprice);
     console.log(userCARDnumber);
 //Easy to check if info is right
+}
