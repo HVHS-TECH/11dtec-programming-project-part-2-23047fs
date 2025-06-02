@@ -20,7 +20,7 @@ let userCARdays = 0;
 let userCARdaysINVALID = true;
 let userTOTALprice;
 let userCARDnumber;
-let avalableCARS;
+let avalableCARS = "";
 
 //Arrays
 let cars = ["BAC Mono", "MX5", "Mini", "Falcon", "Outlander", "Estima"];
