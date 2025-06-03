@@ -31,7 +31,7 @@ header {
 }
 
 .link-flex-container a:hover {
-    background-color: rgb(137, 183, 223);
+    background-color: rgba(137, 183, 223, 0.712);
     color: black;
 }
 
@@ -97,10 +97,7 @@ td,th {
 }
 
 td {
-    border: 1px solid #584ad8;
     border: none;
-    text-align: left;
-    padding: 8px
 }
 
 tr:nth-child(odd) {
