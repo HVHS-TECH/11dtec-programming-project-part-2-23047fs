@@ -42,32 +42,6 @@ header {
     color: black;
 }
 
-#mainBUTTONdiv {
-    border: 2px black;
-}
-
-#mainBUTTON {
-    background-color: gainsboro;
-    color: black;
-    padding: 14px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-#mainBUTTON:hover {
-    background-color: grey;
-    color: black;
-    padding: 14px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
-}
-
 #avalableCARS {
     color: black;
     font-size: 20px;
@@ -104,5 +78,48 @@ tr:nth-child(odd) {
 }
 
 .i30_car_index {
-    float: left;
+    height: auto;
+    width: auto;
+}
+
+.bookingCONTAINER {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #f0f8ff;
+  padding: 10px;
+  border: none;
+}
+
+.bookingCONTAINER > div {
+  background-color: #f0f8ff;
+  border: none;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#mainBUTTONdiv {
+    border: 2px black;
+}
+
+#mainBUTTON {
+    background-color: gainsboro;
+    color: black;
+    padding: 14px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#mainBUTTON:hover {
+    background-color: grey;
+    color: black;
+    padding: 14px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
 }
