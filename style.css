@@ -84,7 +84,7 @@ tr:nth-child(odd) {
 
 .bookingCONTAINER {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   background-color: #f0f8ff;
   padding: 10px;
   border: none;
@@ -118,4 +118,25 @@ tr:nth-child(odd) {
 #mainBUTTON:hover {
     background-color: grey;
 
+}
+
+.carRENTcontainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #f0f8ff;
+  padding: 10px;
+  border: none;
+}
+
+.carRENTcontainer > div {
+  background-color: #f0f8ff;
+  border: none;
+  padding: 10px;
+  font-size: 30px;
+  align-self: center;
+}
+
+.car_rent {
+    height: 320px;
+    width: 600px;
 }

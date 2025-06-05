@@ -47,6 +47,7 @@ function start() {
 Functions
 ********************************/
 //Welcomes user, user name, user age
+/*
 function displayAVALABLEcars() {
     for (i = 0; i < cars.length; i++) {
         avalableCARS = `${avalableCARS} <br> \nCar ${(i + 1)} is ${cars[i]} it has ${carSEATS[i]} seats`;
@@ -55,7 +56,7 @@ function displayAVALABLEcars() {
     document.getElementById("avalableCARS").innerHTML = avalableCARS;
     console.log(avalableCARS);
 }
-
+*/
 
 function userWELCOME() {
     userNAME = prompt("Hello, what is your name");
