@@ -46,10 +46,13 @@ function car0() {
         carTIME = '<option value=""' + i + '"> ' + i + '</option>';
         carTIMEselect.innerHTML += carTIME;
     }
+}
 
+function getCARtimeSELECT() {
     userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + userTIMEtext.innerHTML + ' is $' + (carsPRICE[carSELECTED] * userTIMEtext.innerHTML) + '</p>';
     userCARpriceTEXT.innerHTML += userCARprice;
 }
+
 
 /********************************
     for (i = 0; i < cars.length; i++) {
