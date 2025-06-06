@@ -49,7 +49,7 @@ function car0() {
 }
 
 function getCARtimeSELECT() {
-    userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + userTIMEtext.innerHTML + ' is $' + (carsPRICE[carSELECTED] * userTIMEtext.innerHTML) + '</p>';
+    userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEselect.innerHTML + ' is $' + (carsPRICE[carSELECTED] * carTIMEselect.innerHTML) + '</p>';
     userCARpriceTEXT.innerHTML += userCARprice;
 }
 
