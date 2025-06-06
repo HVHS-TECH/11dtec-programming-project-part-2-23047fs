@@ -9,7 +9,7 @@ console.log("Running car_rentals_2.js");
 const carMAXtime = 30;
 const carMINtime = 1;
 let carSELECTED;
-let carTIMEselect;
+let carTIME;
 let userCARchoice;
 let carCHOICES;
 
@@ -37,7 +37,7 @@ function car0() {
     userCARchoice = '<p>The car you have selected is the ' + cars[carSELECTED];
     userCARtext.innerHTML += userCARchoice
 
-    for (i = 0; i < carMAXtime.length; i++) {
+    for (i = 0; i < carMAXtime; i++) {
         carTIME = '<option value=""' + i + '"> ' + i + '</option>';
         carTIMEselect.innerHTML += carTIME;
     }
