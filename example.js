@@ -8,6 +8,7 @@ console.log("Running car_rentals_2.js");
 //Variables
 let carSELECTED;
 let userCARchoice;
+let carCHOICES;
 
 //Arrays
 cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
@@ -30,13 +31,13 @@ Functions
 function car0() {
     carSELECTED = 0;
 
-
+    
 }
 
 /********************************
     for (i = 0; i < cars.length; i++) {
-        userCARchoice = '<option value=""' + cars[i] + '"> ' + cars[i] + '</option>';
-        carSELECT.innerHTML += userCARchoice;
+        carCHOICES = '<option value=""' + cars[i] + '"> ' + cars[i] + '</option>';
+        carSELECT.innerHTML += carCHOICES;
     }
 makes a drop down select button
 */ 
