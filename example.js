@@ -9,7 +9,7 @@ console.log("Running car_rentals_2.js");
 let carSELECTED
 
 //Arrays
-
+cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', '']
 
 /********************************
 Main code
@@ -27,4 +27,6 @@ Functions
 ********************************/
 function car0() {
     carSELECTED = 0
+
+
 }
