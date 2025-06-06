@@ -6,10 +6,12 @@ Date: Term 2
 console.log("Running car_rentals_2.js");
 
 //Variables
-let carSELECTED
+let carSELECTED;
+let userCARchoice;
 
 //Arrays
-cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', '']
+cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
+carsPRICE = ['25', '45', '30', '35', '60', '55', '70', '85', '90'];
 
 /********************************
 Main code
@@ -26,7 +28,10 @@ function start() {
 Functions
 ********************************/
 function car0() {
-    carSELECTED = 0
+    carSELECTED = 0;
 
-
+    for (i = 0; i < cars.length; i++) {
+        userCARchoice = '<option value=""' + cars[i] + '"> ' + cars[i] + '</option>';
+        carSELECT.innerHTML += userCARchoice;
+    }
 }
