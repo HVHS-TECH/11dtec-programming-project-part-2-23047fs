@@ -31,7 +31,8 @@ Functions
 function car0() {
     carSELECTED = 0;
 
-    
+    userCARchoice = '<p>The car you have selected is the ' + cars[carSELECTED];
+    userCARtext.innerHTML += userCARchoice
 }
 
 /********************************
