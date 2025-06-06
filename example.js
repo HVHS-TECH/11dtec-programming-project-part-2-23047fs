@@ -30,8 +30,13 @@ Functions
 function car0() {
     carSELECTED = 0;
 
+
+}
+
+/********************************
     for (i = 0; i < cars.length; i++) {
         userCARchoice = '<option value=""' + cars[i] + '"> ' + cars[i] + '</option>';
         carSELECT.innerHTML += userCARchoice;
     }
-}
+makes a drop down select button
+*/ 
