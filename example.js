@@ -12,6 +12,8 @@ let carSELECTED;
 let carTIME;
 let userCARchoice;
 let carCHOICES;
+let userTIMEchoice;
+let userCARprice;
 
 //Arrays
 cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
@@ -34,13 +36,19 @@ Functions
 function car0() {
     carSELECTED = 0;
 
-    userCARchoice = '<p>The car you have selected is the ' + cars[carSELECTED];
+    userCARchoice = '<p>The car you have selected is the ' + cars[carSELECTED] + '</p>';
     userCARtext.innerHTML += userCARchoice
 
-    for (i = 0; i < carMAXtime; i++) {
+    userTIMEchoice = '<p>How long would you like to rent the ' + cars[carSELECTED] + '</p>';
+    userTIMEtext.innerHTML += userTIMEchoice;
+
+    for (i = 1; i < (carMAXtime + 1); i++) {
         carTIME = '<option value=""' + i + '"> ' + i + '</option>';
         carTIMEselect.innerHTML += carTIME;
     }
+
+    userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + userTIMEtext.innerHTML + ' is $' + (carsPRICE[carSELECTED] * userTIMEtext.innerHTML) + '</p>';
+    userCARpriceTEXT.innerHTML += userCARprice;
 }
 
 /********************************
