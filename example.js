@@ -17,7 +17,7 @@ let userCARprice;
 
 //Arrays
 cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
-carsPRICE = ['25', '45', '30', '35', '60', '55', '70', '85', '90'];
+carsPRICE = [25, 45, 30, 35, 60, 55, 70, 85, 90];
 
 /********************************
 Main code
