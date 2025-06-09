@@ -17,7 +17,7 @@ header {
 
 .link-flex-container {
     display: flex;
-    background-color: rgb(183, 221, 255);
+    background-color: #b7ddff;
     flex-direction: row;
     justify-content: space-evenly;
     border: 2px solid #584ad8;
@@ -117,21 +117,20 @@ tr:nth-child(odd) {
 
 #mainBUTTON:hover {
     background-color: grey;
-
 }
 
 .carRENTcontainer {
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: #f0f8ff;
-  padding: 10px;
+  padding: 5px;
   border: none;
 }
 
 .carRENTcontainer > div {
   background-color: #f0f8ff;
   border: none;
-  padding: 10px;
+  padding: 5px;
   font-size: 30px;
   align-self: center;
 }
@@ -139,4 +138,5 @@ tr:nth-child(odd) {
 .car_rent {
     height: 320px;
     width: 600px;
+    cursor: pointer;
 }

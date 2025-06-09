@@ -14,6 +14,7 @@ let userCARchoice;
 let carCHOICES;
 let userTIMEchoice;
 let userCARprice;
+let carSELECTEDfalse = false;
 
 //Arrays
 cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
@@ -35,7 +36,21 @@ Functions
 ********************************/
 function car0() {
     carSELECTED = 0;
+    carANDtime()
+}
 
+function car1() {
+    carSELECTED = 1;
+    carANDtime()
+}
+
+function car2() {
+    carSELECTED = 2;
+    carANDtime()
+}
+
+
+function carANDtime() {
     userCARchoice = '<p>The car you have selected is the ' + cars[carSELECTED] + '</p>';
     userCARtext.innerHTML += userCARchoice
 
@@ -45,19 +60,22 @@ function car0() {
     for (i = 1; i < (carMAXtime + 1); i++) {
         carTIME = '<option value=""' + i + '"> ' + i + '</option>';
         carTIMEselect.innerHTML += carTIME;
+        
     }
 }
 
 function getCARtimeSELECT() {
-    userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEselect.innerHTML + ' is $' + (carsPRICE[carSELECTED] * carTIMEselect.innerHTML) + '</p>';
+    console.log(carTIMEinput.value);
+    carTIMEinput.value = Number(carTIMEinput.value)
+    userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEinput.value + ' is $' + (carsPRICE[carSELECTED] * carTIMEinput.value) + '</p>';
     userCARpriceTEXT.innerHTML += userCARprice;
+    console.log(carTIMEinput.value);
 }
 
 
 /********************************
-    for (i = 0; i < cars.length; i++) {
-        carCHOICES = '<option value=""' + cars[i] + '"> ' + cars[i] + '</option>';
-        carSELECT.innerHTML += carCHOICES;
-    }
-makes a drop down select button
-*/ 
+Extra code for later use
+
+
+
+********************************/ 
