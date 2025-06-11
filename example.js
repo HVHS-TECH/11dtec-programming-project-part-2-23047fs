@@ -58,7 +58,7 @@ function carANDtime() {
     userTIMEtext.innerHTML += userTIMEchoice;
 
     for (i = 1; i < (carMAXtime + 1); i++) {
-        carTIME = '<option value=""' + i + '"> ' + i + '</option>';
+        carTIME = '<option id="carTIMEinput" value=""' + i + '"> ' + i + '</option>';
         carTIMEselect.innerHTML += carTIME;
         
     }
