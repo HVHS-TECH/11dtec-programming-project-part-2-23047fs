@@ -49,7 +49,34 @@ function car2() {
     carANDtime()
 }
 
+function car3() {
+    carSELECTED = 3;
+    carANDtime()
+}
 
+function car4() {
+    carSELECTED = 4;
+    carANDtime()
+}
+
+function car5() {
+    carSELECTED = 5;
+    carANDtime()
+}
+
+function car6() {
+    carSELECTED = 6;
+    carANDtime()
+}
+
+function car7() {
+    carSELECTED = 7;
+    carANDtime()
+}
+function car8() {
+    carSELECTED = 8;
+    carANDtime()
+}
 function carANDtime() {
     userCARchoice = '<p>The car you have selected is the ' + cars[carSELECTED] + '</p>';
     userCARtext.innerHTML += userCARchoice
@@ -58,18 +85,17 @@ function carANDtime() {
     userTIMEtext.innerHTML += userTIMEchoice;
 
     for (i = 1; i < (carMAXtime + 1); i++) {
-        carTIME = '<option value=""' + i + '"> ' + i + '</option>';
+        carTIME = '<option value="' + i + '"> ' + i + '</option>';
         carTIMEselect.innerHTML += carTIME;
-        
     }
 }
 
 function getCARtimeSELECT() {
-    console.log(carTIMEinput.value);
-    carTIMEinput.value = Number(carTIMEinput.value)
-    userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEinput.value + ' is $' + (carsPRICE[carSELECTED] * carTIMEinput.value) + '</p>';
+    console.log(carTIMEselect.value);
+    carTIMEselect.value = Number(carTIMEselect.value)
+    userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEselect.value + ' days is $' + (carsPRICE[carSELECTED] * carTIMEselect.value) + '</p>';
     userCARpriceTEXT.innerHTML += userCARprice;
-    console.log(carTIMEinput.value);
+    console.log(carTIMEselect.value);
 }
 
 

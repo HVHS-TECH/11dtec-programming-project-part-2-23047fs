@@ -24,7 +24,7 @@ header {
     border-top-style: none;
 }
 
-.link-flex-container>div {
+.link-flex-container > div {
     background-color: rgb(183, 221, 255);
     padding: 10px;
     font-size: 20px;
