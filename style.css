@@ -141,9 +141,12 @@ tr:nth-child(odd) {
     cursor: pointer;
 }
 
+.centerBOX {
+    justify-self: center;
+}
 
-/* The switch - the box around the slider */
-    .insuranceSWITCH {
+/*Make a box around the switch*/
+.insuranceSWITCH {
     position: relative;
     display: inline-block;
     width: 60px;
@@ -157,6 +160,7 @@ tr:nth-child(odd) {
     height: 0;
 }
 
+/*Make the slider and animation*/
 .insuranceSLIDER {
     position: absolute;
     cursor: pointer;
@@ -167,9 +171,10 @@ tr:nth-child(odd) {
     background-color: #ccc;
     -webkit-transition: .4s;
     transition: .4s;
-    border-radius: 34px;
+    border-radius: 20px;
 }
 
+/*After the animation*/
 .insuranceSLIDER:before {
     position: absolute;
     content: "";
@@ -183,6 +188,7 @@ tr:nth-child(odd) {
     border-radius: 50%;
 }
 
+/*Animation stuff*/
 input:checked + .insuranceSLIDER {
     background-color: #2196F3;
 }
