@@ -54,6 +54,11 @@ header {
     text-align: center;
 }
 
+.formBODY {
+    color: black;
+    font-size: 20px;
+}
+
 table {
     border-collapse: collapse;
     width: 85%;
@@ -132,7 +137,7 @@ tr:nth-child(odd) {
   border: none;
   padding: 5px;
   font-size: 30px;
-  align-self: center;
+  align-self: left;
 }
 
 .car_rent {
@@ -142,7 +147,11 @@ tr:nth-child(odd) {
 }
 
 .centerBOX {
+    border: 1px solid #a7d6ff9f;
     justify-self: center;
+    height: auto;
+    width: 602px;
+    padding: 1px 1px;
 }
 
 /*Make a box around the switch*/

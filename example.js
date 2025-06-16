@@ -84,12 +84,12 @@ function car8() {
 //Selected car and rental time
 function carANDtime() {
     userCARchoice = '<p>The car you have selected is the ' + cars[carSELECTED] + '</p>';
-    userCARtext.innerHTML += userCARchoice
+    userCARtext.innerHTML = userCARchoice
 //'' cahnges it to html not js, like ""
 //examle1.innerHTML += example2 adds what is above to the html
 
     userTIMEchoice = '<p>How long would you like to rent the ' + cars[carSELECTED] + '</p>';
-    userTIMEtext.innerHTML += userTIMEchoice;
+    userTIMEtext.innerHTML = userTIMEchoice;
 
     for (i = 1; i < (carMAXtime + 1); i++) {
         carTIME = '<option value="' + i + '"> ' + i + '</option>';
@@ -104,7 +104,7 @@ function insuranceSLIDER() {
         console.log(insuranceSLIDERvariable);
         return;
     }
-    
+
     if (insuranceSLIDERvariable == false) {
         insuranceSLIDERvariable = true;
         console.log(insuranceSLIDERvariable);
@@ -118,19 +118,18 @@ function getCARtimeSELECT() {
     carTIMEselect.value = Number(carTIMEselect.value)
     if (insuranceSLIDERvariable == true) {
         userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEselect.value + ' days is $' + ((carsPRICE[carSELECTED] + 15) * carTIMEselect.value) + '</p>';
-        userCARpriceTEXT.innerHTML += userCARprice;
+        userCARpriceTEXT.innerHTML = userCARprice;
     }
 
     if (insuranceSLIDERvariable == false) {
         userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEselect.value + ' days is $' + (carsPRICE[carSELECTED] * carTIMEselect.value) + '</p>';
-        userCARpriceTEXT.innerHTML += userCARprice;
+        userCARpriceTEXT.innerHTML = userCARprice;
     }
 }
 
 
 /********************************
 Extra code for later use
-
 
 
 ********************************/ 

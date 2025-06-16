@@ -149,34 +149,29 @@
                 </button>
             </div>
         </div>
-
-        <div class="centerBOX">
-            <p class="mainBODY" id="userCARtext">
+to add document.getElementById("formBOX").style.visibility = "hidden";
+        <div id="formBOX" class="centerBOX">
+            <p class="formBODY" id="userCARtext">
             </p>
-        </div>
         
-        <div class="centerBOX">
-            <p class="mainBODY" id="userTIMEtext">
+            <p class="formBODY" id="userTIMEtext">
             </p>
-        </div>
         
-        <p class="mainBODY">Would you like insurance, for only $15 a day extra</p>
-        <div class="centerBOX">
-            <label class="insuranceSWITCH">
-                <input onclick="insuranceSLIDER()" type="checkbox" checked="checked">
-                <span class="insuranceSLIDER"></span>
-            </label>
-        </div>
-        <br>
+            <p class="formBODY">Would you like insurance, for only $15 a day extra</p>
+            <div>
+                <label class="insuranceSWITCH">
+                    <input onclick="insuranceSLIDER()" type="checkbox" checked="checked">
+                    <span class="insuranceSLIDER"></span>
+                </label>
+            </div>
         
-        <div class="centerBOX">
+            <br>
+        
             <select id="carTIMEselect" onsubmit="return false;">
                 <input type="submit" onclick="getCARtimeSELECT()">
             </select>
-        </div>
         
-        <div class="centerBOX">
-            <p id="userCARpriceTEXT">
+            <p class="formBODY" id="userCARpriceTEXT">
             </p>
         </div>
 
