@@ -15,6 +15,7 @@ let carCHOICES;
 let userTIMEchoice;
 let userCARprice;
 let carSELECTEDfalse = false;
+let insuranceSLIDERvariable = true;
 
 //Arrays
 cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
@@ -73,13 +74,19 @@ function car7() {
     carSELECTED = 7;
     carANDtime()
 }
+
 function car8() {
     carSELECTED = 8;
     carANDtime()
 }
+//what car is selected and what price
+
+//Selected car and rental time
 function carANDtime() {
     userCARchoice = '<p>The car you have selected is the ' + cars[carSELECTED] + '</p>';
     userCARtext.innerHTML += userCARchoice
+//'' cahnges it to html not js, like ""
+//examle1.innerHTML += example2 adds what is above to the html
 
     userTIMEchoice = '<p>How long would you like to rent the ' + cars[carSELECTED] + '</p>';
     userTIMEtext.innerHTML += userTIMEchoice;
@@ -90,12 +97,34 @@ function carANDtime() {
     }
 }
 
+//Checking if insurance slider is true or false
+function insuranceSLIDER() {
+    if (insuranceSLIDERvariable == true) {
+        insuranceSLIDERvariable = false;
+        console.log(insuranceSLIDERvariable);
+        return;
+    }
+    
+    if (insuranceSLIDERvariable == false) {
+        insuranceSLIDERvariable = true;
+        console.log(insuranceSLIDERvariable);
+        return;
+    }
+}
+
+
+//Getting the rental time and displaying the total price
 function getCARtimeSELECT() {
-    console.log(carTIMEselect.value);
     carTIMEselect.value = Number(carTIMEselect.value)
-    userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEselect.value + ' days is $' + (carsPRICE[carSELECTED] * carTIMEselect.value) + '</p>';
-    userCARpriceTEXT.innerHTML += userCARprice;
-    console.log(carTIMEselect.value);
+    if (insuranceSLIDERvariable == true) {
+        userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEselect.value + ' days is $' + ((carsPRICE[carSELECTED] + 15) * carTIMEselect.value) + '</p>';
+        userCARpriceTEXT.innerHTML += userCARprice;
+    }
+
+    if (insuranceSLIDERvariable == false) {
+        userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEselect.value + ' days is $' + (carsPRICE[carSELECTED] * carTIMEselect.value) + '</p>';
+        userCARpriceTEXT.innerHTML += userCARprice;
+    }
 }
 
 
