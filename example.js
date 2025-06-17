@@ -14,8 +14,10 @@ let userCARchoice;
 let carCHOICES;
 let userTIMEchoice;
 let userCARprice;
+let userNAME;
 let carSELECTEDfalse = false;
 let insuranceSLIDERvariable = true;
+
 
 //Arrays
 cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
@@ -37,7 +39,7 @@ Functions
 ********************************/
 
 function getUSERname() {
-    userNAME.value = String(userNAME.value);
+    userNAMEselect.value = String(userNAMEselect.value);
 
     userNAME = '<p>Hello ' + userNAME + ', below are the avalable cars at Bobs Rentals, the number of seats they have, and the price per day</p>';
     userNAMEtext.innerHTML = userNAME;
