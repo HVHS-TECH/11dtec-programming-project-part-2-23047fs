@@ -35,6 +35,17 @@ function start() {
 /********************************
 Functions
 ********************************/
+
+function getUSERname() {
+    
+}
+
+
+
+
+
+
+
 function car0() {
     carSELECTED = 0;
     carANDtime()
