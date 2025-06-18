@@ -41,7 +41,7 @@ Functions
 
 function getUSERname() {
     userNAMEselect.value = String(userNAMEselect.value);
-    userNAME = '<p>Hello ' + userNAMEselect.value + ', below are the avalable cars at Bobs Rentals, the number of seats they have, and the price per day</p>';
+    userNAME = '<p>Hello ' + userNAMEselect.value + ', please input your age in the form below</p>';
     userNAMEtext.innerHTML = userNAME;
 
     if (isNaN(userNAMEselect.value) || userNAME.select.value == "" || userNAME.select.value == " ") {
