@@ -48,6 +48,17 @@ function getUSERname() {
     }
 }
 
+function getUSERage() {
+    userNAMEselect.value = String(userNAMEselect.value);
+    userNAME = '<p>Hello ' + userNAMEselect.value + ', below are the avalable cars at Bobs Rentals, the number of seats they have, and the price per day</p>';
+    userNAMEtext.innerHTML = userNAME;
+
+    if (userNAMEselect.value == "finley") {
+        document.getElementById("carINFO").style.visibility = "visible";
+    }
+}
+
+
 function car0() {
     carSELECTED = 0;
     carANDtime()
