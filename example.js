@@ -51,11 +51,14 @@ function getUSERname() {
 
 function getUSERage() {
     userAGEselect.value = Number(userAGEselect.value);
-    userAGE = '<p>Hello ' + userAGEselect.value + ', below are the avalable cars at Bobs Rentals, the number of seats they have, and the price per day</p>';
+    userAGE = '<p>Hello ' + userNAMEselect.value + ', below are the avalable cars at Bobs Rentals, the number of seats they have, and the price per day</p>';
     userAGEtext.innerHTML = userAGE;
 
     if (userAGEselect.value >= 18) {
         document.getElementById("carINFO").style.visibility = "visible";
+    } else {
+        userAGE = '<p>Soory  ' + userAGEselect.value + ', below are the avalable cars at Bobs Rentals, the number of seats they have, and the price per day</p>';
+        userAGEtext.innerHTML = userAGE;
     }
 }
 
