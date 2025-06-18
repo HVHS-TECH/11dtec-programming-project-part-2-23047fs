@@ -27,7 +27,7 @@ carsPRICE = [25, 45, 30, 35, 60, 55, 70, 85, 90];
 Main code
 ********************************/
 function autoSTART() {
-
+    document.getElementById("carINFO").style.visibility = "hidden";
 }
 
 function start() {
@@ -39,11 +39,13 @@ Functions
 ********************************/
 
 function getUSERname() {
-    console.log(userNAMEselect.value)
     userNAMEselect.value = String(userNAMEselect.value);
     userNAME = '<p>Hello ' + userNAMEselect.value + ', below are the avalable cars at Bobs Rentals, the number of seats they have, and the price per day</p>';
     userNAMEtext.innerHTML = userNAME;
 
+    if (userNAMEselect.value == "finley") {
+        document.getElementById("carINFO").style.visibility = "visible";
+    }
 }
 
 function car0() {
