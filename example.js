@@ -44,8 +44,8 @@ function getUSERname() {
     userNAME = '<p>Hello ' + userNAMEselect.value + ', below are the avalable cars at Bobs Rentals, the number of seats they have, and the price per day</p>';
     userNAMEtext.innerHTML = userNAME;
 
-    if (userNAMEselect.value == is) {
-        document.getElementById("carINFO").style.visibility = "visible";
+    if (isNaN(userNAMEselect.value) || userNAME.select.value == "" || userNAME.select.value == " ") {
+        userAGE = '<p>Sorry but you must enter a real name to start the process of renting a car online</p>';
     }
 }
 
