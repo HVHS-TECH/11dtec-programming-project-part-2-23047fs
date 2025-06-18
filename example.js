@@ -112,8 +112,8 @@ function car8() {
 function carANDtime() {
     userCARchoice = '<p>The car you have selected is the ' + cars[carSELECTED] + '</p>';
     userCARtext.innerHTML = userCARchoice
-//'' cahnges it to html not js, like ""
-//examle1.innerHTML += example2 adds what is above to the html
+    //'' cahnges it to html not js, like ""
+    //examle1.innerHTML += example2 adds what is above to the html
 
     userTIMEchoice = '<p>How long would you like to rent the ' + cars[carSELECTED] + '</p>';
     userTIMEtext.innerHTML = userTIMEchoice;

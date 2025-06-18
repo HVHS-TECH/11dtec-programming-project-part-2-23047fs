@@ -13,10 +13,11 @@
 <!--*************************************************************
   BODY
 **************************************************************-->
+
 <body onload="autoSTART()">
     <!-- Script *******************************************-->
-        <script src="example.js"></script>
-        <!--Connects javascript to html-->
+    <script src="example.js"></script>
+    <!--Connects javascript to html-->
 
     <header>
         <h1 id="mainHEADER">Bob's Rentals</h1>
@@ -39,13 +40,13 @@
     </nav>
 
     <main>
-    
+
         <form onsubmit="return false;">
             <label>Before you can rent a car what is your name</label>
             <input type="text" id="userNAMEselect"><br>
             <input type="submit" onclick="getUSERname()">
         </form>
-    
+
         <p class="formBODY" id="userNAMEtext">
         </p>
 
@@ -54,12 +55,11 @@
             <input type="number" id="userAGEselect"><br>
             <input type="submit" onclick="getUSERage()">
         </form>
-    
+
         <p class="formBODY" id="userAGEtext">
         </p>
-    
+
         <br>
-        document.getElementById("carINFO").style.visibility = "hidden";
 
         <div id="carINFO">
             <table>
@@ -114,16 +114,17 @@
                     <td>$90</td>
                 </tr>
             </table>
-        
+
             <br>
             <br>
             <br>
             <br>
             <br>
-        
-            <p class="mainBODY">Below are the cars avalable. <br> Click on the car you would like and then fill out the form
+
+            <p class="mainBODY">Below are the cars avalable. <br> Click on the car you would like and then fill out the
+                form
                 below</p>
-        
+
             <div class="carRENTcontainer">
                 <div>
                     <button onclick="car0()">
@@ -133,7 +134,8 @@
                 </div>
                 <div>
                     <button onclick="car1()">
-                        <img class="car_rent" src="Images/mx5_st_cyg_exclusiveline_ng6vbaa_42m_rhd_1000_500.jpg" alt="MX5">
+                        <img class="car_rent" src="Images/mx5_st_cyg_exclusiveline_ng6vbaa_42m_rhd_1000_500.jpg"
+                            alt="MX5">
                         <p class="mainBODY">MX5</p>
                     </button>
                 </div>
@@ -169,7 +171,8 @@
                 </div>
                 <div>
                     <button onclick="car7()">
-                        <img class="car_rent" src="Images/Next Gen Outlander XLS_front-Right_Red_Diamond.jpg" alt="Outlander">
+                        <img class="car_rent" src="Images/Next Gen Outlander XLS_front-Right_Red_Diamond.jpg"
+                            alt="Outlander">
                         <p class="mainBODY">Outlander</p>
                     </button>
                 </div>
@@ -180,11 +183,11 @@
                     </button>
                 </div>
             </div>
-        
+
             <div id="formBOX" class="centerBOX">
                 <p class="formBODY" id="userCARtext">
                 </p>
-        
+
                 <p class="formBODY">Would you like insurance, for only $15 a day extra</p>
                 <div>
                     <label class="insuranceSWITCH">
@@ -192,27 +195,27 @@
                         <span class="insuranceSLIDER"></span>
                     </label>
                 </div>
-        
+
                 <br>
-        
+
                 <p class="formBODY" id="userTIMEtext">
                 </p>
-        
+
                 <select id="carTIMEselect" onsubmit="return false;">
                     <input type="submit" onclick="getCARtimeSELECT()">
                 </select>
-        
+
                 <p class="formBODY" id="userCARpriceTEXT">
                 </p>
             </div>
         </div>
-    
+
     </main>
-    
+
     <footer>
-    
+
     </footer>
-    </body>
+</body>
 
 </html>
 <!--*************************************************************
