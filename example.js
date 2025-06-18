@@ -51,7 +51,7 @@ function getUSERname() {
 
 function getUSERage() {
     userAGEselect.value = Number(userAGEselect.value);
-    userAGE = '<p>Hello ' + userNAMEselect.value + ' congrats on being ' + userAGEselect.value + '</p>';
+    userAGE = '<p>Hello ' + userNAMEselect.value + ', below are the avalable cars at Bobs Rentals, the number of seats they have, and the price per day</p>';
     userAGEtext.innerHTML = userAGE;
 
     if (userAGEselect.value >= 18) {
