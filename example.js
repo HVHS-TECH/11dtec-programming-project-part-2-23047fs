@@ -28,6 +28,7 @@ Main code
 ********************************/
 function autoSTART() {
     document.getElementById("carINFO").style.visibility = "hidden";
+    console.log(cars)
 }
 
 function start() {
@@ -57,7 +58,6 @@ function getUSERage() {
         document.getElementById("carINFO").style.visibility = "visible";
     }
 }
-
 
 function car0() {
     carSELECTED = 0;
