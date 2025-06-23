@@ -17,10 +17,12 @@ let userCARprice;
 let userNAME;
 let carSELECTEDfalse = false;
 let insuranceSLIDERvariable = true;
-
+let userSEAT;
+let userSEATchoices = "";
 
 //Arrays
 let cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
+let carSEAT = [1, 2, 4, 4, 5, 5, 5, 7, 8]
 let carsPRICE = [25, 45, 30, 35, 60, 55, 70, 85, 90];
 
 /********************************
@@ -28,7 +30,10 @@ Main code
 ********************************/
 function autoSTART() {
     document.getElementById("carINFO").style.visibility = "hidden";
-    console.log(cars)
+    document.getElementById("formBOX").style.visibility = "hidden";
+    document.getElementById("formAGE").style.visibility = "hidden";
+    document.getElementById("formCAR").style.visibility = "hidden";
+
 }
 
 function start() {
@@ -40,70 +45,107 @@ Functions
 ********************************/
 
 function getUSERname() {
-    userNAMEselect.value = String(userNAMEselect.value);
-    userNAME = '<p>Hello ' + userNAMEselect.value + ', please input your age in the form below</p>';
-    userNAMEtext.innerHTML = userNAME;
+    if (!isNaN(userNAMEselect.value) || userNAMEselect.value == "" || userNAMEselect.value == " ") {
+        userNAMEselect.value = String(userNAMEselect.value)
+        userName = '<p>Sorry but ' + userNAMEselect.value + ' is not a real name, you must enter a real name to start the process of renting a car online.</p>';
+        userNAMEtext.innerHTML = userNAME;
+    }
 
-    if (isNaN(userNAMEselect.value) || userNAME.select.value == "" || userNAME.select.value == " ") {
-        userAGE = '<p>Sorry but you must enter a real name to start the process of renting a car online</p>';
+    if (isNaN(userNAMEselect.value)) {
+        userNAME = '<p>Hello ' + userNAMEselect.value + ', please fill in the forms below.</p>';
+        userNAMEtext.innerHTML = userNAME;
+        document.getElementById("formAGE").style.visibility = "hidden";
     }
 }
 
 function getUSERage() {
     userAGEselect.value = Number(userAGEselect.value);
-    userAGE = '<p>Hello ' + userNAMEselect.value + ', below are the avalable cars at Bobs Rentals, the number of seats they have, and the price per day</p>';
-    userAGEtext.innerHTML = userAGE;
 
     if (userAGEselect.value >= 18) {
-        document.getElementById("carINFO").style.visibility = "visible";
+        userAGE = '<p>Hello ' + userNAMEselect.value + ', you are able to rent from us</p>';
+        userAGEtext.innerHTML = userAGE;
+        document.getElementById("formCAR").style.visibility = "hidden";
     } else {
-        userAGE = '<p>Sorry but you are too young to be able to rent a car from us online</p>';
+        userAGE = '<p>Sorry but you are too young to be able to rent a car from us online.</p>';
         userAGEtext.innerHTML = userAGE;
     }
 }
 
+function getUSERseat() {
+    userAGEselect.value = Number(userAGEselect.value);
+
+        userSEATselect.value = Math.abs(userSEATselect.value)
+
+    if (userSEATselect.value >= 8) {
+        userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended car for you is the Estima.</p>';
+        userSEATtext.innerHTML = userSEAT;
+    } else if (userSEATselect.value == 1) {
+        userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended car for you is the BAC Mono.</p>';
+        userSEATtext.innerHTML = userSEAT;
+    } else {
+        for (i = 0; i <= carSEAT.length; i++) {
+            if (userSEATselect.value == carSEAT[i]) {
+                userSEATchoices += cars[i] + ', '
+            }
+            userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended cars for you are the ' + userSEATchoices + 'below are the avalable cars at Bobs Rentals please select which one you would like.</p>';
+            userSEATtext.innerHTML = userSEAT;
+        }
+    }
+
+    document.getElementById("carINFO").style.visibility = "visible";
+}
+
 function car0() {
     carSELECTED = 0;
+    document.getElementById("formBOX").style.visibility = "visible";
     carANDtime()
 }
 
 function car1() {
     carSELECTED = 1;
+    document.getElementById("formBOX").style.visibility = "visible";
     carANDtime()
 }
 
 function car2() {
     carSELECTED = 2;
+    document.getElementById("formBOX").style.visibility = "visible";
     carANDtime()
 }
 
 function car3() {
     carSELECTED = 3;
+    document.getElementById("formBOX").style.visibility = "visible";
     carANDtime()
 }
 
 function car4() {
     carSELECTED = 4;
+    document.getElementById("formBOX").style.visibility = "visible";
     carANDtime()
 }
 
 function car5() {
     carSELECTED = 5;
+    document.getElementById("formBOX").style.visibility = "visible";
     carANDtime()
 }
 
 function car6() {
     carSELECTED = 6;
+    document.getElementById("formBOX").style.visibility = "visible";
     carANDtime()
 }
 
 function car7() {
     carSELECTED = 7;
+    document.getElementById("formBOX").style.visibility = "visible";
     carANDtime()
 }
 
 function car8() {
     carSELECTED = 8;
+    document.getElementById("formBOX").style.visibility = "visible";
     carANDtime()
 }
 //what car is selected and what price

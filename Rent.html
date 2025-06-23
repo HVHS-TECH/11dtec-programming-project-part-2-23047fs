@@ -41,23 +41,41 @@
 
     <main>
 
-        <form onsubmit="return false;">
-            <label>Before you can rent a car what is your name</label>
-            <input type="text" id="userNAMEselect"><br>
-            <input type="submit" onclick="getUSERname()">
-        </form>
+        <div class="centerBOX">
+            <!--Name-->
+            <form onsubmit="return false;">
+                <label>Before you can rent a car what is your name</label>
+                <input type="text" id="userNAMEselect"><br>
+                <input type="submit" onclick="getUSERname()">
+            </form>
+        
+            <p class="formBODY" id="userNAMEtext">
+            </p>
 
-        <p class="formBODY" id="userNAMEtext">
-        </p>
+            <div id="formAGE">
+                <!--Age-->
+                <form onsubmit="return false;">
+                    <label>Before you can rent a car what is your age</label>
+                    <input type="number" id="userAGEselect"><br>
+                    <input type="submit" onclick="getUSERage()">
+                </form>
+            </div>
 
-        <form onsubmit="return false;">
-            <label>Before you can rent a car what is your age</label>
-            <input type="number" id="userAGEselect"><br>
-            <input type="submit" onclick="getUSERage()">
-        </form>
-
-        <p class="formBODY" id="userAGEtext">
-        </p>
+            <p class="formBODY" id="userAGEtext">
+            </p>
+        
+            <div id="formCAR">
+                <!--Recommended car-->
+                <form onsubmit="return false;">
+                    <label>How many seats would you like in your car</label>
+                    <input type="number" id="userSEATselect"><br>
+                    <input type="submit" onclick="getUSERseat()">
+                </form>
+            </div>
+        
+            <p class="formBODY" id="userSEATtext">
+            </p>
+        </div>
 
         <br>
 
