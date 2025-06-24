@@ -46,14 +46,12 @@ Functions
 
 function getUSERname() {
     if (!isNaN(userNAMEselect.value) || userNAMEselect.value == "" || userNAMEselect.value == " ") {
-        console.log(userNAMEselect.value)
-        userName = '<p>Sorry but ' + userNAMEselect.value + ' is not a real name, you must enter a real name to start the process of renting a car online.</p>';
-        console.log(userNAME)
+        userNAME = '<p>Sorry but ' + userNAMEselect.value + ' is not a real name, you must enter a real name to start the process of renting a car online.</p>';
         userNAMEtext.innerHTML = userNAME;
     }
 
     if (isNaN(userNAMEselect.value)) {
-        userNAME = '<p>Hello ' + userNAMEselect.value + ', please fill in the forms below.</p>';
+        userNAME = '<p>Hello ' + userNAMEselect.value + ', please enter your age in the form below.</p>';
         userNAMEtext.innerHTML = userNAME;
         document.getElementById("formAGE").style.visibility = "visible";
     }
@@ -62,33 +60,32 @@ function getUSERname() {
 function getUSERage() {
     userAGEselect.value = Number(userAGEselect.value);
 
-    if (userAGEselect.value >= 18) {
-        userAGE = '<p>Hello ' + userNAMEselect.value + ', you are able to rent from us</p>';
+    if (userAGEselect.value >= 18 && userAGEselect.value <= 100) {
+        userAGE = '<p>Hello ' + userNAMEselect.value + ', please enter how many seats you would like in your rental car.</p>';
         userAGEtext.innerHTML = userAGE;
         document.getElementById("formCAR").style.visibility = "visible";
     } else {
-        userAGE = '<p>Sorry but you are too young to be able to rent a car from us online.</p>';
+        userAGE = '<p>Sorry but you are too young or too old to be able to rent a car from us online.</p>';
         userAGEtext.innerHTML = userAGE;
     }
 }
 
 function getUSERseat() {
     userAGEselect.value = Number(userAGEselect.value);
-
-        userSEATselect.value = Math.abs(userSEATselect.value)
+    userSEATselect.value = Math.abs(userSEATselect.value)
 
     if (userSEATselect.value >= 8) {
-        userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended car for you is the Estima.</p>';
+        userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended car for you is the Estima, it has 8 seats.</p>';
         userSEATtext.innerHTML = userSEAT;
     } else if (userSEATselect.value == 1) {
-        userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended car for you is the BAC Mono.</p>';
+        userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended car for you is the BAC Mono, it has 1 seat.</p>';
         userSEATtext.innerHTML = userSEAT;
     } else {
         for (i = 0; i <= carSEAT.length; i++) {
             if (userSEATselect.value == carSEAT[i]) {
                 userSEATchoices += cars[i] + ', '
             }
-            userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended cars for you are the ' + userSEATchoices + 'below are the avalable cars at Bobs Rentals please select which one you would like.</p>';
+            userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended cars for you are the ' + userSEATchoices + ' they have ' + carSEAT[userSEATchoices] + '. Below are the avalable cars at Bobs Rentals please select which one you would like.</p>';
             userSEATtext.innerHTML = userSEAT;
         }
     }
