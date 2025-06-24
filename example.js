@@ -29,6 +29,7 @@ let carsPRICE = [25, 45, 30, 35, 60, 55, 70, 85, 90];
 /********************************
 Main code
 ********************************/
+//Hides stuff until form completion
 function autoSTART() {
     document.getElementById("carINFO").style.visibility = "hidden";
     document.getElementById("formBOX").style.visibility = "hidden";
@@ -45,6 +46,7 @@ function start() {
 Functions
 ********************************/
 
+//User name validation
 function getUSERname() {
     if (!isNaN(userNAMEselect.value) || userNAMEselect.value == "" || userNAMEselect.value == " ") {
         userNAME = '<p>Sorry but ' + userNAMEselect.value + ' is not a real name, you must enter a real name to start the process of renting a car online.</p>';
@@ -58,6 +60,7 @@ function getUSERname() {
     }
 }
 
+//User age validation
 function getUSERage() {
     userAGEselect.value = Number(userAGEselect.value);
 
@@ -71,14 +74,20 @@ function getUSERage() {
     }
 }
 
+//Recommended car
 function getUSERseat() {
     userAGEselect.value = Number(userAGEselect.value);
     userSEATselect.value = Math.abs(userSEATselect.value)
 
-    if (userSEATselect.value == 3 || userSEATselect.value == 6) {
-        
+    //Allows valid car seats
+    if (userSEATselect.value == 3) {
+        userSEATselect.value = 4;
+    }
+    if (userSEATselect.value == 6) {
+        userSEATselect.value = 7;
     }
 
+    //What car is recommended
     if (userSEATselect.value >= 8) {
         userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended car for you is the Estima, it has 8 seats.</p>';
         userSEATtext.innerHTML = userSEAT;
@@ -99,6 +108,7 @@ function getUSERseat() {
     document.getElementById("carINFO").style.visibility = "visible";
 }
 
+//Once car image is pressed it selects it and unhides the rest of the form
 function car0() {
     carSELECTED = 0;
     document.getElementById("formBOX").style.visibility = "visible";
@@ -152,7 +162,6 @@ function car8() {
     document.getElementById("formBOX").style.visibility = "visible";
     carANDtime()
 }
-//what car is selected and what price
 
 //Selected car and rental time
 function carANDtime() {
