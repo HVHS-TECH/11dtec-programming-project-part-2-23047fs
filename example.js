@@ -46,7 +46,9 @@ Functions
 
 function getUSERname() {
     if (!isNaN(userNAMEselect.value) || userNAMEselect.value == "" || userNAMEselect.value == " ") {
+        console.log(userNAMEselect.value)
         userName = '<p>Sorry but ' + userNAMEselect.value + ' is not a real name, you must enter a real name to start the process of renting a car online.</p>';
+        console.log(userNAME)
         userNAMEtext.innerHTML = userNAME;
     }
 
