@@ -75,6 +75,10 @@ function getUSERseat() {
     userAGEselect.value = Number(userAGEselect.value);
     userSEATselect.value = Math.abs(userSEATselect.value)
 
+    if (userSEATselect.value == 3 || userSEATselect.value == 6) {
+        
+    }
+
     if (userSEATselect.value >= 8) {
         userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended car for you is the Estima, it has 8 seats.</p>';
         userSEATtext.innerHTML = userSEAT;
