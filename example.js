@@ -19,6 +19,7 @@ let carSELECTEDfalse = false;
 let insuranceSLIDERvariable = true;
 let userSEAT;
 let userSEATchoices = "";
+let numberUSERseats;
 
 //Arrays
 let cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
@@ -84,10 +85,11 @@ function getUSERseat() {
         for (i = 0; i <= carSEAT.length; i++) {
             if (userSEATselect.value == carSEAT[i]) {
                 userSEATchoices += cars[i] + ', '
+                numberUSERseats = carSEAT[i];
             }
-            userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended cars for you are the ' + userSEATchoices + ' they have ' + carSEAT[userSEATchoices] + '. Below are the avalable cars at Bobs Rentals please select which one you would like.</p>';
-            userSEATtext.innerHTML = userSEAT;
         }
+        userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended cars for you are the ' + userSEATchoices + ' they have ' + numberUSERseats + ' seats. Below are the avalable cars at Bobs Rentals please select which one you would like.</p>';
+        userSEATtext.innerHTML = userSEAT;
     }
 
     document.getElementById("carINFO").style.visibility = "visible";
