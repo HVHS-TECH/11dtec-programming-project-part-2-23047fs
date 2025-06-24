@@ -54,7 +54,7 @@ function getUSERname() {
     if (isNaN(userNAMEselect.value)) {
         userNAME = '<p>Hello ' + userNAMEselect.value + ', please fill in the forms below.</p>';
         userNAMEtext.innerHTML = userNAME;
-        document.getElementById("formAGE").style.visibility = "hidden";
+        document.getElementById("formAGE").style.visibility = "visible";
     }
 }
 
@@ -64,7 +64,7 @@ function getUSERage() {
     if (userAGEselect.value >= 18) {
         userAGE = '<p>Hello ' + userNAMEselect.value + ', you are able to rent from us</p>';
         userAGEtext.innerHTML = userAGE;
-        document.getElementById("formCAR").style.visibility = "hidden";
+        document.getElementById("formCAR").style.visibility = "visible";
     } else {
         userAGE = '<p>Sorry but you are too young to be able to rent a car from us online.</p>';
         userAGEtext.innerHTML = userAGE;
