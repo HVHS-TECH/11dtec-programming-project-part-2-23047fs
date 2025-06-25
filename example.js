@@ -20,6 +20,7 @@ let insuranceSLIDERvariable = true;
 let userSEAT;
 let userSEATchoices = "";
 let numberUSERseats;
+let cardNUMBER;
 
 //Arrays
 let cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
@@ -35,7 +36,7 @@ function autoSTART() {
     //document.getElementById("formBOX").style.visibility = "hidden";
     //document.getElementById("formAGE").style.visibility = "hidden";
     //document.getElementById("formCAR").style.visibility = "hidden";
-    document.getElementById("formBOX").style.visibility = "hidden";
+    //document.getElementById("formBOX").style.visibility = "hidden";
 }
 
 
@@ -46,6 +47,14 @@ function start() {
 /********************************
 Functions
 ********************************/
+function fakeCARDnumber() {
+    fakeCARDnumberSELECT.value = Number(fakeCARDnumberSELECT.value)
+
+    if (!isNaN(fakeCARDnumberSELECT.value)) {
+        cardNUMBER = '<p>This was a scam :)</p>';
+        fakeCARDnumberTEXT.innerHTML = cardNUMBER;
+    }
+}
 
 //User name validation
 function getUSERname() {
