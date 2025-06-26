@@ -79,7 +79,7 @@ function getUSERage() {
         userAGEtext.innerHTML = userAGE;
         document.getElementById("formCAR").style.visibility = "visible";
     } else {
-        userAGE = '<p>Sorry but you are too young or too old to be able to rent a car from us online.</p>';
+        userAGE = '<p>Sorry but if you are younger than 18 or older than 100 you are unable to rent from us online.</p>';
         userAGEtext.innerHTML = userAGE;
     }
 }
