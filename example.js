@@ -32,11 +32,11 @@ Main code
 ********************************/
 //Hides stuff until form completion
 function autoSTART() {
-    document.getElementById("carINFO").style.visibility = "hidden";
-    document.getElementById("formBOX").style.visibility = "hidden";
-    document.getElementById("formAGE").style.visibility = "hidden";
-    document.getElementById("formCAR").style.visibility = "hidden";
-    document.getElementById("formBOX").style.visibility = "hidden";
+    //document.getElementById("carINFO").style.visibility = "hidden";
+    //document.getElementById("formBOX").style.visibility = "hidden";
+    //document.getElementById("formAGE").style.visibility = "hidden";
+    //document.getElementById("formCAR").style.visibility = "hidden";
+    //document.getElementById("formBOX").style.visibility = "hidden";
 }
 
 function start() {
