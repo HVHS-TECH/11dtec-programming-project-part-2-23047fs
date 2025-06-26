@@ -58,7 +58,7 @@
                 <!--Age-->
                 <form onsubmit="return false;">
                     <label>Before you can rent a car what is your age</label>
-                    <input type="number" id="userAGEselect" required><br>
+                    <input type="number" id="userAGEselect" min="1" required><br>
                     <input type="submit" onclick="getUSERage()">
                 </form>
             </div>
@@ -70,7 +70,7 @@
                 <!--Recommended car-->
                 <form onsubmit="return false;">
                     <label>How many seats would you like in your car</label>
-                    <input type="number" id="userSEATselect" required><br>
+                    <input type="number" id="userSEATselect" min="1" max="8" required><br>
                     <input type="submit" onclick="getUSERseat()">
                 </form>
             </div>
