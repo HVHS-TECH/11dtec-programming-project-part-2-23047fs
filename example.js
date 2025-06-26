@@ -39,7 +39,6 @@ function autoSTART() {
     //document.getElementById("formBOX").style.visibility = "hidden";
 }
 
-
 function start() {
 
 }
