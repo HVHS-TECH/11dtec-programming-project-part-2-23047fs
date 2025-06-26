@@ -229,6 +229,7 @@ input[type=text] {
     background-position: 2px 6px; 
     background-repeat: no-repeat;
     padding: 6px 10px 6px 20px;
+    padding-left : 60px;
     transition: width 0.4s ease-in-out;
 }
 
@@ -243,6 +244,7 @@ input[type=text] :hover {
     background-position: 2px 6px; 
     background-repeat: no-repeat;
     padding: 6px 10px 6px 20px;
+    padding-left : 60px;
 }
 
 input[type=text]:focus {
@@ -260,6 +262,7 @@ input[type=number] {
     background-position: 2px 6px; 
     background-repeat: no-repeat;
     padding: 6px 10px 6px 20px;
+    padding-left : 60px;
     transition: width 0.4s ease-in-out;
 }
 
@@ -274,6 +277,7 @@ input[type=number] :hover {
     background-position: 2px 6px; 
     background-repeat: no-repeat;
     padding: 6px 10px 6px 20px;
+    padding-left : 60px;
 }
 
 input[type=number]:focus {
