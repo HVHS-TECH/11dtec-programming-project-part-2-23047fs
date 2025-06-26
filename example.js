@@ -206,7 +206,7 @@ function insuranceSLIDER() {
 
 //Getting the rental time and displaying the total price
 function getCARtimeSELECT() {
-    carTIMEselect.value = Number(carTIMEselect.value)
+    carTIMEselect.value = Number(carTIMEselect.value);
     if (insuranceSLIDERvariable == true) {
         userCARprice = '<p>The total price of the ' + cars[carSELECTED] + ' for ' + carTIMEselect.value + ' days is $' + ((carsPRICE[carSELECTED] + 15) * carTIMEselect.value) + '</p>';
         userCARpriceTEXT.innerHTML = userCARprice;
