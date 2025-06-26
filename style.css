@@ -151,6 +151,7 @@ tr:nth-child(odd) {
 .centerBOX {
     border: 1px solid #a7d6ff9f;
     justify-self: center;
+    text-align: center;
     height: auto;
     width: 1204px;
     padding: 2px 2px;
