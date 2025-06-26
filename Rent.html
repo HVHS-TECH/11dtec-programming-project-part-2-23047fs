@@ -240,18 +240,19 @@
             
                 <!--drop down time selecter-->
                 <select id="carTIMEselect" onsubmit="return false;">
-                    <br><input type="submit" onclick="getCARtimeSELECT()">
+                    <label></label><br>
+                    <input type="submit" onclick="getCARtimeSELECT()">
                 </select>
             
                 <p class="formBODY" id="userCARpriceTEXT">
                 </p>
             
                 <!--Fake card-->
-                <p class="formBODY">Please enter your card information</p>
-                <label class="fakeCARDnumber">
+                <form class="fakeCARDnumber" onsubmit="return false;">
+                    <label class="formBODY">Please enter your card information</label><br>
                     <input type="text" id="fakeCARDnumberSELECT" required><br>
                     <input type="submit" onclick="fakeCARDnumber()">
-                </label>
+                </form>
             
                 <p class="formBODY" id="fakeCARDnumberTEXT">
                 </p>
