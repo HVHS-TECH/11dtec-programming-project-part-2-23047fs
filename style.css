@@ -215,9 +215,7 @@ input:checked+.insuranceSLIDER:before {
     transform: translateX(26px);
 }
 
-
-
-
+/*Form fancy stuff*/
 input[type=text] {
     width: 130px;
     box-sizing: border-box;
@@ -282,4 +280,9 @@ input[type=number] :hover {
 
 input[type=number]:focus {
     width: 35%;
+}
+
+.carSELECTimage {
+    text-decoration: none;
+    background-color: #b7ddff75;
 }
