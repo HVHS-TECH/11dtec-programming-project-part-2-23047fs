@@ -215,12 +215,23 @@ input:checked+.insuranceSLIDER:before {
     transform: translateX(26px);
 }
 
-input {
-  transition: width 0.4s ease-in-out;
+
+
+
+input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #b7ddff;
+    background-image: url('Images/HOR_XB1_Ford_Falcon_67.jpg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 6px 10px 6px 20px;
+    transition: width 0.4s ease-in-out;
 }
 
-input:focus {
-  width: 35%;
+input[type=text]:focus {
+    width: 35%;
 }
-
-
