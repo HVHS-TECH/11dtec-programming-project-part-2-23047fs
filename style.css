@@ -226,12 +226,56 @@ input[type=text] {
     font-size: 16px;
     background-color: #b7ddff;
     background-image: url('Images/veyron-super-sport-300-bugatti-1-Upd.jpg');
-    background-position: 4px 4px; 
+    background-position: 2px 6px; 
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
+    padding: 6px 10px 6px 20px;
     transition: width 0.4s ease-in-out;
 }
 
+input[type=text] :hover {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #5a5a5a;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #839eb6;
+    background-image: url('Images/veyron-super-sport-300-bugatti-1-Upd.jpg');
+    background-position: 2px 6px; 
+    background-repeat: no-repeat;
+    padding: 6px 10px 6px 20px;
+}
+
 input[type=text]:focus {
+    width: 35%;
+}
+
+input[type=number] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #b7ddff;
+    background-image: url('Images/veyron-super-sport-300-bugatti-1-Upd.jpg');
+    background-position: 2px 6px; 
+    background-repeat: no-repeat;
+    padding: 6px 10px 6px 20px;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=number] :hover {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #5a5a5a;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #839eb6;
+    background-image: url('Images/veyron-super-sport-300-bugatti-1-Upd.jpg');
+    background-position: 2px 6px; 
+    background-repeat: no-repeat;
+    padding: 6px 10px 6px 20px;
+}
+
+input[type=number]:focus {
     width: 35%;
 }
