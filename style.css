@@ -214,3 +214,13 @@ input:checked+.insuranceSLIDER:before {
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
+
+input {
+  transition: width 0.4s ease-in-out;
+}
+
+input:focus {
+  width: 35%;
+}
+
+
