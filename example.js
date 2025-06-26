@@ -24,7 +24,7 @@ let cardNUMBER;
 
 //Arrays
 let cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
-let carSEAT = [1, 2, 4, 4, 5, 5, 5, 7, 8]
+let carSEAT = [1, 2, 4, 4, 5, 5, 5, 7, 8];
 let carsPRICE = [25, 45, 30, 35, 60, 55, 70, 85, 90];
 
 /********************************
@@ -47,7 +47,7 @@ function start() {
 Functions
 ********************************/
 function fakeCARDnumber() {
-    fakeCARDnumberSELECT.value = Number(fakeCARDnumberSELECT.value)
+    fakeCARDnumberSELECT.value = Number(fakeCARDnumberSELECT.value);
 
     if (!isNaN(fakeCARDnumberSELECT.value)) {
         cardNUMBER = '<p>This was a scam :)</p>';
@@ -86,7 +86,7 @@ function getUSERage() {
 //Recommended car
 function getUSERseat() {
     userAGEselect.value = Number(userAGEselect.value);
-    userSEATselect.value = Math.abs(userSEATselect.value)
+    userSEATselect.value = Math.abs(userSEATselect.value);
 
     //Allows valid car seats
     if (userSEATselect.value == 3) {
@@ -106,7 +106,7 @@ function getUSERseat() {
     } else {
         for (i = 0; i <= carSEAT.length; i++) {
             if (userSEATselect.value == carSEAT[i]) {
-                userSEATchoices += cars[i] + ', '
+                userSEATchoices += cars[i] + ', ';
                 numberUSERseats = carSEAT[i];
             }
         }
@@ -121,62 +121,62 @@ function getUSERseat() {
 function car0() {
     carSELECTED = 0;
     document.getElementById("formBOX").style.visibility = "visible";
-    carANDtime()
+    carANDtime();
 }
 
 function car1() {
     carSELECTED = 1;
     document.getElementById("formBOX").style.visibility = "visible";
-    carANDtime()
+    carANDtime();
 }
 
 function car2() {
     carSELECTED = 2;
     document.getElementById("formBOX").style.visibility = "visible";
-    carANDtime()
+    carANDtime();
 }
 
 function car3() {
     carSELECTED = 3;
     document.getElementById("formBOX").style.visibility = "visible";
-    carANDtime()
+    carANDtime();
 }
 
 function car4() {
     carSELECTED = 4;
     document.getElementById("formBOX").style.visibility = "visible";
-    carANDtime()
+    carANDtime();
 }
 
 function car5() {
     carSELECTED = 5;
     document.getElementById("formBOX").style.visibility = "visible";
-    carANDtime()
+    carANDtime();
 }
 
 function car6() {
     carSELECTED = 6;
     document.getElementById("formBOX").style.visibility = "visible";
-    carANDtime()
+    carANDtime();
 }
 
 function car7() {
     carSELECTED = 7;
     document.getElementById("formBOX").style.visibility = "visible";
-    carANDtime()
+    carANDtime();
 }
 
 function car8() {
     carSELECTED = 8;
     document.getElementById("formBOX").style.visibility = "visible";
-    carANDtime()
+    carANDtime();
 }
 
 //Selected car and rental time
 function carANDtime() {
     userCARchoice = '<p>The car you have selected is the ' + cars[carSELECTED] + '</p>';
-    userCARtext.innerHTML = userCARchoice
-    //'' cahnges it to html not js, like ""
+    userCARtext.innerHTML = userCARchoice;
+    //'' changes it to html not js, like ""
     //examle1.innerHTML += example2 adds what is above to the html
 
     userTIMEchoice = '<p>How long would you like to rent the ' + cars[carSELECTED] + '</p>';
