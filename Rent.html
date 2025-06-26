@@ -46,7 +46,7 @@
             <!--Name-->
             <form onsubmit="return false;">
                 <label class="formBODY">Before you can rent a car what is your name</label><br><br>
-                <input type="text" id="userNAMEselect" required><br>
+                <input type="text" id="userNAMEselect" placeholder="Name..." required><br>
                 <input type="submit" onclick="getUSERname()">
             </form>
         
@@ -58,7 +58,7 @@
                 <!--Age-->
                 <form onsubmit="return false;">
                     <label class="formBODY">Before you can rent a car what is your age</label><br><br>
-                    <input type="number" id="userAGEselect" min="1" required><br>
+                    <input type="number" id="userAGEselect" min="1" placeholder="Age..." required><br>
                     <input type="submit" onclick="getUSERage()">
                 </form>
             </div>
@@ -70,7 +70,7 @@
                 <!--Recommended car-->
                 <form onsubmit="return false;">
                     <label class="formBODY">How many seats would you like in your car</label><br><br>
-                    <input type="number" id="userSEATselect" min="1" max="8" required><br>
+                    <input type="number" id="userSEATselect" min="1" max="8" placeholder="1-8..." required><br>
                     <input type="submit" onclick="getUSERseat()">
                 </form>
             </div>
@@ -231,7 +231,7 @@
                 <!--Fake card-->
                 <form class="fakeCARDnumber" onsubmit="return false;">
                     <label class="formBODY">Please enter your card information</label><br><br>
-                    <input type="text" id="fakeCARDnumberSELECT" required><br>
+                    <input type="text" id="fakeCARDnumberSELECT" placeholder="Card Number..." required><br>
                     <input type="submit" onclick="fakeCARDnumber()">
                 </form>
             
