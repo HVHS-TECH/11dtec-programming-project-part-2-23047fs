@@ -45,7 +45,7 @@
         <div class="centerBOX">
             <!--Name-->
             <form onsubmit="return false;">
-                <label>Before you can rent a car what is your name</label><br>
+                <label class="formBODY">Before you can rent a car what is your name</label><br><br>
                 <input type="text" id="userNAMEselect" required><br>
                 <input type="submit" onclick="getUSERname()">
             </form>
@@ -57,7 +57,7 @@
             <div id="formAGE">
                 <!--Age-->
                 <form onsubmit="return false;">
-                    <label>Before you can rent a car what is your age</label><br>
+                    <label class="formBODY">Before you can rent a car what is your age</label><br><br>
                     <input type="number" id="userAGEselect" min="1" required><br>
                     <input type="submit" onclick="getUSERage()">
                 </form>
@@ -69,7 +69,7 @@
             <div id="formCAR">
                 <!--Recommended car-->
                 <form onsubmit="return false;">
-                    <label>How many seats would you like in your car</label><br>
+                    <label class="formBODY">How many seats would you like in your car</label><br><br>
                     <input type="number" id="userSEATselect" min="1" max="8" required><br>
                     <input type="submit" onclick="getUSERseat()">
                 </form>
@@ -240,7 +240,6 @@
             
                 <!--drop down time selecter-->
                 <select id="carTIMEselect" onsubmit="return false;">
-                    <label></label><br>
                     <input type="submit" onclick="getCARtimeSELECT()">
                 </select>
             
@@ -249,7 +248,7 @@
             
                 <!--Fake card-->
                 <form class="fakeCARDnumber" onsubmit="return false;">
-                    <label class="formBODY">Please enter your card information</label><br>
+                    <label class="formBODY">Please enter your card information</label><br><br>
                     <input type="text" id="fakeCARDnumberSELECT" required><br>
                     <input type="submit" onclick="fakeCARDnumber()">
                 </form>
