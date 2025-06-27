@@ -110,7 +110,7 @@ function getUSERseat() {
                 numberUSERseats = carSEAT[i];
             }
         }
-        userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended cars for you are the ' + userSEATchoices + ' they have ' + numberUSERseats + ' seats. Below are the avalable cars at Bobs Rentals please select which one you would like.</p>';
+        userSEAT = '<p>Hello ' + userNAMEselect.value + ', the recommended cars for you are the ' + userSEATchoices + ' they have ' + numberUSERseats + ' seats. Below are the available cars at Bobs Rentals please select which one you would like.</p>';
         userSEATtext.innerHTML = userSEAT;
     }
 
