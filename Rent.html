@@ -41,42 +41,53 @@
     </nav>
 
     <main>
-
-        <div class="centerBOX">
-            <!--Name-->
-            <form onsubmit="return false;">
-                <label class="formBODY">Before you can rent a car what is your name</label><br><br>
-                <input type="text" id="userNAMEselect" placeholder="Name..." required><br>
-                <input type="submit" onclick="getUSERname()">
-            </form>
-        
-            <!--dislpays after validation-->
-            <p class="formBODY" id="userNAMEtext">
-            </p>
-
-            <div id="formAGE">
-                <!--Age-->
-                <form onsubmit="return false;">
-                    <label class="formBODY">Before you can rent a car what is your age</label><br><br>
-                    <input type="number" id="userAGEselect" min="1" placeholder="Age..." required><br>
-                    <input type="submit" onclick="getUSERage()">
-                </form>
+        <div class="image-flex-container">
+            <div>
+                <p>image</p>
             </div>
 
-            <p class="formBODY" id="userAGEtext">
-            </p>
-        
-            <div id="formCAR">
-                <!--Recommended car-->
-                <form onsubmit="return false;">
-                    <label class="formBODY">How many seats would you like in your car</label><br><br>
-                    <input type="number" id="userSEATselect" min="1" max="8" placeholder="1-8..." required><br>
-                    <input type="submit" onclick="getUSERseat()">
-                </form>
+            <div>
+                <div class="centerBOX">
+                    <!--Name-->
+                    <form onsubmit="return false;">
+                        <label class="formBODY">Before you can rent a car what is your name</label><br><br>
+                        <input type="text" id="userNAMEselect" placeholder="Name..." required><br>
+                        <input type="submit" onclick="getUSERname()">
+                    </form>
+            
+                    <!--dislpays after validation-->
+                    <p class="formBODY" id="userNAMEtext">
+                    </p>
+            
+                    <div id="formAGE">
+                        <!--Age-->
+                        <form onsubmit="return false;">
+                            <label class="formBODY">Before you can rent a car what is your age</label><br><br>
+                            <input type="number" id="userAGEselect" min="1" placeholder="Age..." required><br>
+                            <input type="submit" onclick="getUSERage()">
+                        </form>
+                    </div>
+            
+                    <p class="formBODY" id="userAGEtext">
+                    </p>
+            
+                    <div id="formCAR">
+                        <!--Recommended car-->
+                        <form onsubmit="return false;">
+                            <label class="formBODY">How many seats would you like in your car</label><br><br>
+                            <input type="number" id="userSEATselect" min="1" max="8" placeholder="1-8..." required><br>
+                            <input type="submit" onclick="getUSERseat()">
+                        </form>
+                    </div>
+            
+                    <p class="formBODY" id="userSEATtext">
+                    </p>
+                </div>
             </div>
-        
-            <p class="formBODY" id="userSEATtext">
-            </p>
+
+            <div>
+                <p>image</p>
+            </div>
         </div>
 
         <br>
