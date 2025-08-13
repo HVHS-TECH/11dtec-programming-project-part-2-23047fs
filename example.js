@@ -23,9 +23,9 @@ let numberUSERseats;
 let cardNUMBER;
 
 //Arrays
-let cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
-let carSEAT = [1, 2, 4, 4, 5, 5, 5, 7, 8];
-let carsPRICE = [25, 45, 30, 35, 60, 55, 70, 85, 90];
+const cars = ['BAC Mono', 'MX5', 'Mini', 'i30', 'Falcon', 'Kona', 'Prado', 'Outlander', 'Estima'];
+const carSEAT = [1, 2, 4, 4, 5, 5, 5, 7, 8];
+const carsPRICE = [25, 45, 30, 35, 60, 55, 70, 85, 90];
 
 /********************************
 Main code
